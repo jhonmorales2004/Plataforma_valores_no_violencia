@@ -1,0 +1,500 @@
+/* Variables */
+:root {
+    --primary-color: #5865f2;
+    --secondary-color: #b1e3dd;
+    --accent-color: #ffb3b3;
+    --fondoprincipal-color: #ec8c2c;
+    --figuras-color: #ffffff;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Prata', serif;
+    --card-height: 65vh;
+    /* --card-width: calc(var(--card-height) / 1.5); */
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/proyecto4.0/fuentes/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Prata";
+    src: url(/proyecto4.0/fuentes/Prata/Prata-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+body {
+
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+
+/* ---------------------------barra de navegacion--------------- */
+header {
+    position: fixed;/* Fija la barra de navegación */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    transition: top 0.3s; /* Añade una transición suave */
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 20px;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li {
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    padding: 15px;
+    text-align: center;
+    font-family: var(--font-primary);
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to bottom, #FF8A29,#FFBA05);
+    border-radius: 5px; 
+    color: #ffffff;
+}
+
+/* Ícono de menú para pantallas pequeñas */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* -------------------------------pagina inicio-------------- */
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    background-color: var(--fondoprincipal-color);
+    padding:  10%;
+    margin-top: 13vh;
+    position: relative;
+}
+.inicioContenido{
+    margin-right: 30rem;
+}
+
+.inicioContenido h1 {
+    color: #ffffff;
+    font-family: var(--font-secondary);
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.inicioContenido p {
+    color: #ffffff;
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+}
+
+.inicioImagen img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+/* --------------------------------figuras geometricas--------------- */
+.figurasGeometricas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.circulo {
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid var(--figuras-color);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    top: 65%;
+    left: 5%;
+}
+
+.circuloAbajo {
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid var(--figuras-color);
+    width: 172px;
+    height: 172px;
+    border-radius: 50%;
+    top: 5%;
+    left: 55%;
+}
+
+.trianguloArriva img {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 139px;
+    height: 139px;
+}
+
+.trianguloAbajo img {
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    width: 181px;
+    height: 181px;
+    transform: rotate(-90deg); 
+}
+/* --------------------------------video---------- */
+.contenedorVideos{
+    padding-top: 13vh;
+    background-color: #ffffff;
+    text-align: center;
+}
+.contenedorVideos h2{
+    font-family: var(--font-secondary);
+    color: #FF8316;
+    text-decoration: underline;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 200;
+}
+.contenedorSecundario{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFE8AD;
+}
+.tarjetaColorMorado{
+    width: 50%;
+    height: auto;
+}
+.tarjetaColorCeleste{
+    width: 50%;
+    height: auto;
+}
+.estiloCarta{
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.carta {
+    margin: auto;
+    height: 100vh;
+    width: auto;
+    border-radius: 20px;
+    flex-direction: column;
+    transition: transform 0.5s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 3rem;
+}
+
+.imagenCarta{
+    padding-bottom: 1em;
+    text-align:  center;
+}
+.imagenCarta img {
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50% ;
+    transition: transform 0.6s ease-in-out;
+}
+
+
+.cartaCeleste h3 {
+    padding: 5px 10px 10px;
+    font-family: var(--font-primary);
+    color: #FFBA05;
+    font-size: 2rem;
+    font-weight: 200;
+}
+.cartaMorado h3 {
+    padding: 5px 10px 10px;
+    font-family: var(--font-primary);
+    color: #FF8316;
+    font-size: 2rem;
+    font-weight: 200;
+}
+.carta span {   
+    margin: 5px 10px 0 10px;
+    font-family: var(--font-primary);
+    color: #212121;
+    overflow-wrap: break-word;
+}
+.cartaMorado{
+    background: linear-gradient(to bottom, #FF8A29 20%, #ffffff 20%);
+}
+.cartaCeleste{
+    background: linear-gradient(to bottom, #FFBA05 20%, #ffffff 20%);
+}
+.carta span {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 20px;
+}
+.carta ol {
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    text-decoration: none;
+}
+.carta ol li{
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.carta ol li a{
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+.carta ol li a:hover{
+    background: linear-gradient(to bottom, #FF8A29,#FFBA05);
+    border-radius: 5px; 
+    color: #ffffff;
+}
+
+/* ----------------------------------------footer------------ */
+footer {
+    background-color: #EC8C2C;
+    padding: 10px;
+    color: #ffffff;  
+    position: relative;
+    overflow: hidden;  
+    text-align: right;
+    height: 9rem;
+}
+
+.figurasDePie{
+    position: absolute;
+}
+
+.trianguloFooter{
+    position: relative;
+    top: 4rem;
+    left: 5rem;
+}
+.trianguloFooter img{
+    height: 50px;
+}
+
+.triangulo2Footer{
+    position: relative;
+    left: 25rem;
+    bottom:  2rem;
+}
+.triangulo2Footer img{
+    height: 50px;
+    transform: rotate(44deg);
+}
+
+.circuloFooter {
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid var(--figuras-color);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    top: 2rem;
+    left: 77rem;
+}
+.circuloFooter2{
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid var(--figuras-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top: 0rem;
+    left: 40rem;
+}
+
+.contenidoFooter{
+    margin: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenidoFooter p{
+    padding: 0;
+    font-family: var(--font-primary);
+    overflow-wrap: break-word;
+    font-size: 1.2rem;
+    color: white;
+    width: 30%;
+}
+
+  
+  footer .iconosSociales a {
+    margin: 0 20px;
+  }
+  
+  footer .iconosSociales img {
+    width: 24px;
+    height: 24px;
+  }
+
+@media (max-width: 768px) {
+    body{
+        padding: 0%;
+    }
+    /* Barra de navegación */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 130px; /* Alineado con el header */
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    nav ul li {
+        margin: 10px 0;  
+    } 
+    nav ul li a {
+        color: #000;
+        font-size: 1.6rem;
+        display: block;
+        padding: 10px;
+        text-decoration: none;        
+        background: linear-gradient(to bottom, #DB6EBF,var(--fondoprincipal-color));
+        border-radius: 30px;
+    }
+    nav ul li a:hover {
+        color: #000000;
+    }
+
+    /* Ícono del menú */
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        margin-right: 10px;
+        cursor: pointer;
+        margin: 70px;
+    }
+    /* Ajustes para secciones y elementos */
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+    .inicioContenido{
+        margin-right: 0;
+    }
+    .inicioContenido h1 {
+        font-size: 2.5rem;
+    }
+
+    .inicioContenido p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .inicioImagen img {
+        display: none;
+    }
+    /* Figuras geométricas */
+    .figurasGeometricas .circulo,
+    .figurasGeometricas .circuloAbajo,
+    .figurasGeometricas .trianguloArriva img,
+    .figurasGeometricas .trianguloAbajo img {
+        display: none; /* Ocultar figuras geométricas en dispositivos pequeños */
+    }
+    .contenedorLey348{
+        padding-top: 10px;
+    }
+    .contenedorVideos {
+        padding-top: 20PX;
+    }
+    .contenedorVideos h2 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+    .contenedorSecundario{
+        /* background-color: #000; */
+        flex-direction: column;
+        width: 100%;
+    }
+    .tarjetaColorMorado ,.tarjetaColorCeleste{
+        width: 100%;
+        margin: auto;
+    }
+    .estiloCarta{
+        width: 100%;
+        
+    }
+    .carta {
+        margin: auto;
+        padding: 30px;
+        height: auto;        
+    }
+
+    .imagenCarta img {
+        width: 100px;
+        height: 100px;
+    }
+    
+
+
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .contenidoFooter {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .contenidoFooter p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .iconosSociales {
+        margin: 10px;
+    }
+}

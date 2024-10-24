@@ -1,0 +1,239 @@
+:root {
+    --primary-color: #5865f2;
+    --secondary-color: #b1e3dd;
+    --accent-color: #ffb3b3;
+    --fondoprincipal-color: #6278F7;
+    --figuras-color: #95FFD4;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Prata', serif;
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/proyecto4.0/fuentes/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Prata";
+    src: url(/proyecto4.0/fuentes/Prata/Prata-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+
+/* ---------------------------barra de navegacion--------------- */
+header {
+    position: fixed;/* Fija la barra de navegación */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    transition: top 0.3s; /* Añade una transición suave */
+}
+
+.logo img {
+    height: 50px;
+    border-radius: 20px;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    padding: 15px;
+    text-align: center;
+    font-family: var(--font-primary);
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+    transition: background-color 0.5s, color 0.5s;
+    
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to bottom, #ff0000,#000000);
+        border-radius: 5px; 
+    color: #ffffff;
+}
+/* Ícono de menú para pantallas pequeñas */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* ----------------------------------------------------------- */
+
+
+.sobreMi {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to left, #ff0000,rgb(189, 20, 20),rgb(236, 1, 1),#000000 98%);
+    padding: 30px;
+    overflow-wrap: break-word;
+    color: #fff;
+    
+}
+.jhon{
+    margin-top: 100px;
+}
+
+.miFoto img {
+    margin-right: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contenidoDeMi {
+    max-width: 800px;
+}
+
+.contenidoDeMi h1 {
+    font-family: "prata";
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.contenidoDeMi p {
+    font-family: "Montserrat";
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.detalles {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.detalles p {
+    font-family: "Montserrat";
+    margin: 5px 0;
+}
+
+
+
+.iconosSociales {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 10px;
+}
+
+.iconosSociales img {
+
+    height: 50px;
+    border-radius: 10px;
+    width: auto;
+}
+
+
+@media (max-width: 768px) {
+    
+    body{
+        padding: 0%;
+    }
+    /* Barra de navegación */
+    
+    nav ul {
+        
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 130px; /* Alineado con el header */
+        padding: 10px 0;
+        font-weight: bold;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    } 
+
+    nav ul li a {
+        width: auto;
+        color: #fff;
+        font-size: 1.6rem;
+        display: block;
+        padding: 20px;
+        text-decoration: none;        
+        background: linear-gradient(to bottom, rgba(247, 3, 3, 0.327),#0509eb3e);
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px rgba(40, 4, 242, 0.1);
+
+        
+    }
+    nav ul li a:hover {
+        color: #000000;
+    }
+    
+
+    /* Ícono del menú */
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        margin-right: 10px;
+        cursor: pointer;
+        margin: 70px;
+    }
+    
+    .sobreMi {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+
+    .miFoto img {
+        width: 50%; 
+        margin-bottom: 20px;
+    }
+
+    .contenidoDeMi h1 {
+        font-size: 28px; 
+    }
+
+    .contenidoDeMi p {
+        font-size: 16px; 
+    }
+    .contenidoDeMi .iconosSociales{
+        /* background-color: #000000; */
+        margin: auto;
+        justify-content: space-evenly;
+        gap: 10px;
+        width: 80%;
+    }
+    .contenidoDeMi .iconosSociales a img{
+        height: 30px;
+    }
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estiloInicio.css">
+    <link rel="icon" href="./imagenes/file.png" style="border-radius: 50%;">
+    <title>VALORES</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="./imagenes/logo.png" alt="logo de la institucion">
+        </div>
+        <nav>       
+            <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Ícono de menú -->
+                
+            <ul id="navegador">
+                <li id="inicio"><a href="#">Inicio</a></li>
+                <li><a href="./html/sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="#valores">Valores</a></li>
+                <li><a href="./html/ley348.html">Ley 348</a></li>
+                <li><a href="./html/videos.html">Videos</a></li>
+            </ul>            
+        </nav>
+    </header>
+
+    <!-- seccion inicio -->
+    <section class="inicio" id="inicio">
+        <div class="inicioContenido">
+            <h1>Educación con valores y
+                libre de violencia</h1>
+            <p>Sistemas Informáticos</p>
+        </div>
+
+        <div class="figurasGeometricas">
+            <div class="circulo"></div>
+            <div class="circuloAbajo"></div>
+            <div class="trianguloArriva">
+                <img src="./imagenes/Polygon 1.svg" alt="">
+            </div>
+            <div class="trianguloAbajo">
+                <img src="./imagenes/Polygon 1.svg" alt="">
+            </div>
+        </div>
+
+        <div class="inicioImagen">
+            <img src="./imagenes/fondoestudiantes.png" alt="Imagen de fondo">
+        </div>
+    </section>
+
+    <!-- seccion valores -->
+    <section id="valores" class="valores">
+        <h2>Valores</h2>
+
+        <div class="contenedorValores">
+            <!-- grupo verde -->
+
+            <div class="contenedorGrupoVerde contenedorGrupo">
+
+                <a  class="estiloCarta" onclick="mostrarDetalle('ARMONIA')">
+                    <div class="carta cartaVerde">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/armonia.jpg" alt="imagen de valor">
+                        </div>
+                        <h3>ARMONIA</h3>
+                        <span>"La armonía es el equilibrio perfecto entre las diferencias."</span>
+                    </div>
+                </a>
+
+                <a  class="estiloCarta" >
+                    <div class="carta cartaVerde" onclick="mostrarDetalle('RESPETO')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/respeto.jpg" alt="imagen de valor">
+                        </div>
+                        <h3>RESPETO</h3>
+                        <span>"El respeto es la base de toda buena relación."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaVerde" onclick="mostrarDetalle('EQUIDAD_SOCIAL')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/equidad.jpg" alt="imagen de valor">
+                        </div>
+                        <h3>EQUIDAD SOCIAL EN PARTICIPACION</h3>
+                        <span>"La equidad social asegura que todas las voces cuenten."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaVerde" onclick="mostrarDetalle('CUIDADO_DEL_MEDIO_AMBIENTE')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/medioambiente.jpg" alt="imagen de valor">
+                        </div>
+                        <h3>CUIDADO DEL MEDIO AMBIENTE</h3>
+                        <span>"Cuidar el medio ambiente es proteger nuestro futuro."</span>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="contenedorGrupoCeleste contenedorGrupo">
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaCeleste" onclick="mostrarDetalle('UNIDAD')">
+                        <div class="imagenCarta" >
+                            <img src="./imagenes/imgValores/unidad.jpg" alt="imagen de valor">
+                        </div>
+                        <h3>UNIDAD</h3>
+                        <span>"La unidad nos hace más fuertes juntos."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaCeleste" onclick="mostrarDetalle('RESPONSABILIDAD')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/responsabilidad.jpg" alt="imagen de valor">
+                        </div>
+                        <h3>RESPONSABILIDAD</h3>
+                        <span>"La responsabilidad es cumplir con nuestros compromisos."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaCeleste" onclick="mostrarDetalle('TRANSPARIENCIA')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/transpariencia.jpg" alt="imagen de valor">
+                        </div>
+                        <h3>TRANSPARIENCIA</h3>
+                        <span>"La transparencia es actuar con claridad y honestidad."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta"> 
+                    <div class="carta cartaCeleste" onclick="mostrarDetalle('LIBERTAD')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/libertad.jpg" alt="imagen de valor">
+                        </div>
+                        <h3>LIBERTAD</h3>
+                        <span>"La libertad es el derecho de elegir nuestro propio camino."</span>
+                    </div>
+                </a>
+                
+            </div>
+<!----------------------------------------------------------------CAMBIAR COOR NARANJA---------------------------------------------------- -->
+            <div class="contenedorGrupoVerdeClaro contenedorGrupo">
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaVerdeClaro" onclick="mostrarDetalle('EQUIDAD_E_IGUALDAD_DE_GENERO')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/EQUIDAD E IGUALDAD DE GENERO.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>EQUIDAD E IGUALDAD DE GENERO</h3>
+                        <span>"La equidad de género es dar a todos las mismas oportunidades."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaVerdeClaro" onclick="mostrarDetalle('RECIPROCIDAD')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/RECIPROCIDAD.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>RECIPROCIDAD</h3>
+                        <span>"La reciprocidad es el intercambio mutuo de respeto y apoyo."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaVerdeClaro" onclick="mostrarDetalle('CREATIVIDAD')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/CREATIVIDAD.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>CREATIVIDAD</h3>
+                        <span>"La creatividad es pensar más allá de lo convencional."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaVerdeClaro" onclick="mostrarDetalle('ENTUSIASMO')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/ENTUSIASMO.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>ENTUSIASMO</h3>
+                        <span>"El entusiasmo es la chispa que enciende la acción."</span>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="contenedorGrupoRojo contenedorGrupo">
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaRojo" onclick="mostrarDetalle('IGUALDAD')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/igualdad.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>IGUALDAD</h3>
+                        <span>"La igualdad es tratar a todos con justicia y respeto."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaRojo" onclick="mostrarDetalle('SOLIDARIDAD')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/solidaridad.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>SOLIDARIDAD</h3>
+                        <span>"La solidaridad es el apoyo incondicional en tiempos de necesidad."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaRojo" onclick="mostrarDetalle('PASION')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/pasion.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>PASION</h3>
+                        <span>"La pasión es la energía que impulsa nuestros sueños."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaRojo" onclick="mostrarDetalle('VALENTIA')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/valentia.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>VALENTIA</h3>
+                        <span>"La valentía es enfrentar los miedos con determinación."</span>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="contenedorGrupoMorado contenedorGrupo">
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaMorado" onclick="mostrarDetalle('JUSTICIA')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/justicia.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>JUSTICIA</h3>
+                        <span>"La justicia es dar a cada uno lo que le corresponde."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaMorado" onclick="mostrarDetalle('SABIDURIA')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/sabiduria.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>SABIDURIA</h3>
+                        <span>"La sabiduría es el conocimiento aplicado con experiencia."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaMorado" onclick="mostrarDetalle('COMPASION')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/compasion.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>COMPASION</h3>
+                        <span>"La compasión es el entendimiento y el apoyo en el sufrimiento ajeno."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaMorado" onclick="mostrarDetalle('ESPIRITUALIDAD')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/espiritualidad.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>ESPIRITUALIDAD</h3>
+                        <span>"La espiritualidad es la búsqueda de significado y conexión interior."</span>
+                    </div>
+                </a>
+                
+            </div>
+            
+            <div class="contenedorGrupoAmarillo contenedorGrupo">
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaAmarillo" onclick="mostrarDetalle('DIGNIDAD')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/dignidad.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>DIGNIDAD</h3>
+                        <span>"La dignidad es el respeto inherente que merece cada persona."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaAmarillo" onclick="mostrarDetalle('ALEGRIA')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/alegria.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>ALEGRIA</h3>
+                        <span>"La alegría es la luz que ilumina nuestros momentos."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaAmarillo" onclick="mostrarDetalle('OPTIMISMO')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/optimismo.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>OPTIMISMO</h3>
+                        <span>"El optimismo es ver oportunidades en cada desafío."</span>
+                    </div>
+                </a>
+
+                <a href="#" class="estiloCarta">
+                    <div class="carta cartaAmarillo" onclick="mostrarDetalle('INNOVACION')">
+                        <div class="imagenCarta">
+                            <img src="./imagenes/imgValores/innovacion.jpeg" alt="imagen de valor">
+                        </div>
+                        <h3>INNOVACION</h3>
+                        <span>"La innovación es transformar ideas en soluciones creativas."</span>
+                    </div>
+                </a>
+                
+            </div>   
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="figurasDePie">
+            <div class="trianguloFooter">
+                <img src="./imagenes/Polygon 1.svg" alt="">
+            </div>
+        
+            <div class="triangulo2Footer">
+                <img src="./imagenes/Polygon 1.svg" alt="">
+            </div>
+            <div class="circuloFooter"></div>
+            <div class="circuloFooter2"></div>
+        </div>
+        
+        <div class="contenidoFooter">
+            <div class="iconosSociales" >
+                <a href="https://www.facebook.com/groups/1038556392965760/about?locale=es_LA"><img src="./imagenes/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="./imagenes/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="./imagenes/instagram.svg" alt="Instagram"></a>
+            </div>
+            <p>Desarrollado por participantes: <br> 👉Jhon Alexander Morales Lara <br> 👉Joel Marcel Mamani Escobar 
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="./js/paginaInicio.js"></script>
+    <script src="./js/JSPaginaBaseValores.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fuentes/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Prata";
+    src: url(../fuentes/Prata/Prata-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}/* Estilos básicos */
+body {
+    font-family: 'Montserrat', "prata";
+    margin: 0;
+    padding: 0;
+    padding-top: 6rem;
+    background-color: #ca21b18b;
+}
+
+/* Estilos del contenedor de la navegación */
+header {
+    position: fixed; /* Fija la barra de navegación */
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 95px;
+    
+    transition: top 0.3s; /* Añade una transición suave */
+}
+nav {
+    position: fixed;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a , ul li a{
+    font-family: "Montserrat";
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color: #fb00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+    transition: background-color 0.3s, color 0.3s; 
+}
+nav ul li a:hover , ul li a:hover{
+    background-color: transparent;
+    color: #000;
+    border: 3px solid #000;
+    font-weight: 800;
+}
+
+/* Estilos para el contenido de la página */
+#detalleContenido {
+    padding: 30px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+}
+#detalleContenido h1{
+    font-family: "prata";
+    padding: 20px;
+}
+/* Estilos de los títulos */
+#detalleContenido h2 {
+    margin: auto;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#detalleContenido h3 {
+    margin-bottom: 10px;
+    font-family: "Montserrat";
+    color: #333;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* Estilos de los párrafos */
+#detalleContenido  p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+ul li, ol li{
+    margin-left: 30px;
+    padding: 5px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+h4{ font-size: 24px; 
+    color: #ffffff; 
+    background-color: #ff00ea; 
+    padding: 15px 20px; 
+    border-radius: 10px; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+}
+.botonVolver{    
+    text-align: center;
+    margin-bottom: 30px;
+}
+.botonVolver ul li,.botonVolver ul {
+    list-style: none;
+    text-align: center;
+}
+.botonVolver ul li a{
+    text-decoration: none;
+}
+
+

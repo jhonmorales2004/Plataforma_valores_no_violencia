@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fuentes/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Prata";
+    src: url(../fuentes/Prata/Prata-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}/* Estilos básicos */
+body {
+    font-family: 'Montserrat', "prata";
+    margin: 0;
+    padding: 0;
+    padding-top: 6rem;
+    background-color: #f0f0f0;
+}
+
+/* Estilos del contenedor de la navegación */
+header {
+    position: fixed; /* Fija la barra de navegación */
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 95px;
+    
+    transition: top 0.3s; /* Añade una transición suave */
+}
+
+nav {
+    position: fixed;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a , ul li a{
+    font-family: "Montserrat";
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+nav ul li a:hover , ul li a:hover{
+    background-color: #6220dc;
+}
+
+
+
+/* Estilos para el contenido de la página */
+#detalleContenido {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de los títulos */
+#detalleContenido h2 {
+    font-size: 24px;
+}
+
+#detalleContenido h3 {
+    font-family: "Montserrat";
+    color: #333;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* Estilos de los párrafos */
+#detalleContenido  p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.caracteristicas{
+    padding: 0.5rem;
+}
+.caracteristicas li{
+    text-align: justify;
+    font-family: "Montserrat";
+    margin: 0.5rem;
+    color: #666;
+}
+
+
+.botonVolver{
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+
+
